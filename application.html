@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form - intelshopper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">intelshopper</div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="methodology.html" class="nav-link">Methodology</a>
+          </li>
+          <li class="nav-item">
+            <a href="application.html" class="nav-link">Application Form</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Spacer to prevent content hiding -->
+    <div class="contact-spacer"></div>
+
+    <div class="container">
+      <div class="contact-header">
+        <h1>We are Hiring!</h1>
+        <h3>SCROLL DOWN TO FILL THE APPLICATION FORM:</h3>
+        <div class="job-description">
+          <p>
+            We are contracted by businesses to assess their customer service by
+            posing as regular customers. Upon securing a contract, you will
+            receive specific instructions directing you to the relevant company
+            or outlet, along with the necessary funds to complete your task,
+            whether it involves making a purchase or utilizing a service.
+            Following the visit, you will be required to provide a comprehensive
+            report detailing your experience and evaluating staff performance.
+          </p>
+          <p>
+            Our services are typically sought by companies that wish to address
+            customer complaints or enhance their service quality by gaining
+            valuable insights into staff behavior and customer interactions.
+          </p>
+          <p>
+            Your identity will remain confidential in accordance with the nature
+            of the role, and you will receive $400 for each completed
+            assignment, in addition to transportation bonuses and meal
+            allowances when applicable. You will be tasked with evaluating
+            customer service across a variety of retail stores, restaurants, and
+            service providers within your local area.
+          </p>
+          <p>
+            This role offers flexibility, allowing you to set your own hours
+            with no long-term commitment required. Apply below
+          </p>
+        </div>
+      </div>
+
+      <!-- New Flexbox Application Container -->
+      <div class="application-container">
+        <div class="application-left">
+          <div class="application-info">
+            <h2>Join Our Secret Shopper Evaluator Team</h2>
+            <p>
+              If you're interested in our open positions, start by applying
+              here. We're looking for detail-oriented individuals who can
+              provide valuable insights into customer experiences.
+            </p>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <span class="benefit-icon">💰</span>
+                <span>$400 per assignment + bonuses</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">⏰</span>
+                <span>Flexible hours</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🏠</span>
+                <span>Work in your local area</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">📊</span>
+                <span>No experience required</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="application-right">
+          <div class="form-header">
+            <h3>Apply Now</h3>
+            <p>Fill out the form below to start your application</p>
+          </div>
+          <div class="form-content">
+            <form id="applicationForm">
+              <div class="form-section">
+                <div class="form-group floating">
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="fullname"
+                    >Full Name <span class="required">*</span></label
+                  >
+                </div>
+
+                <div class="form-group floating">
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="address"
+                    >Street Address <span class="required">*</span></label
+                  >
+                </div>
+
+                <div class="form-group floating">
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="city"
+                    >City, State, Zip Code
+                    <span class="required">*</span></label
+                  >
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group floating">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="email"
+                      >Email Address <span class="required">*</span></label
+                    >
+                  </div>
+                  <div class="form-group floating">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="phone"
+                      >Phone Number <span class="required">*</span></label
+                    >
+                  </div>
+                </div>
+
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="terms" required />
+                    <span class="checkmark"></span>
+                    I agree to the terms and conditions
+                    <span class="required">*</span>
+                  </label>
+                </div>
+
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter" />
+                    <span class="checkmark"></span>
+                    I want to receive updates about high-paying assignments and
+                    exclusive opportunities
+                  </label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  <span class="btn-text">Submit Application</span>
+                  <span class="btn-loading" style="display: none">
+                    <span class="spinner"></span>
+                    Submitting...
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; <span id="year"></span> intelshopper. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
